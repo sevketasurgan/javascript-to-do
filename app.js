@@ -82,11 +82,14 @@ resetButton.addEventListener('click', function () {
 });
 function handleEvent(event) {
 
-
+    event.preventDefault();
     // let elDeadline = document.querySelector("#deadlineInput").value.toString().toUpperCase();
     addTask(input.value);
-    event.preventDefault();
-    window.location.reload();
+
+    setTimeout(() => {
+        window.location.reload();
+    }, 3000)
+
 
 }
 

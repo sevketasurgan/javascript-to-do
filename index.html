@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do list</title>
+</head>
+
+<body>
+
+
+
+
+    <form id="todoForm" action="index.html" method="POST">
+
+        <div class="container mx-5 my-5 border border-dark  ">
+            <h1 class="display-2 text-center" style="text-decoration: underline;"> To-Do List</h1>
+
+            <div class="row pt-1 pb-3">
+                <div class="col-sm-2 ">
+                    <span class="lead"><b>Task : </b></span>
+                </div>
+                <div class="col">
+                    <input type="text" name="taskInput" id="taskInput" class="form-control form-control-sm">
+                </div>
+            </div>
+
+            <!-- <div class="row pt-3 pb-3">
+                <div class="col  ">
+                    <span class="lead"><b>Deadline : </b></span>
+                </div>
+                <div class="col">
+                    <input type="date" name="deadlineInput" id="deadlineInput" class="form-control form-control-sm">
+
+                </div>
+
+            </div> -->
+            <div class="row  pb-2 ">
+                <div class="col">
+                    <button type="submit" class="btn btn-success">Add to
+                        List</button>
+                </div>
+
+                <div class="col">
+                    <button type="button" id="resetButton" class="btn btn-danger" style="float:right;  ">Reset</button>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- To-do Elements -->
+        <div class="container pt-2 mx-5 my-5 border container-tasks">
+            <h1 class="display-5 text-left" style="text-decoration: underline;"> Tasks </h1>
+            <hr>
+
+
+        </div>
+
+
+
+
+
+    </form>
+    <!-- Alert Toast -->
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body text-center" style="font-weight: bolder;"></div>
+        </div>
+    </div>
+    <!-- Alert Toast End -->
+
+    <script src="app.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
